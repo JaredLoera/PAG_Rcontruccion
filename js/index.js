@@ -1,7 +1,7 @@
 AOS.init();
 
-let timeTimeOut = 3500;
-let time = 300;
+let timeTimeOut = 1500;
+let time = 100;
 
 const animation_1 = () => {
    document.querySelector("#intro_logo").classList.add("d-none");
@@ -15,6 +15,7 @@ const animation_3 = () => {
    document.querySelector("#span_icon").classList.remove("d-none");
    document.querySelector("body").classList.remove("scroll-y-none");
 }
+
 const favicon = document.querySelector("#favicon");
 let logo = "assets/crown_logo.png"
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) logo = "assets/crown_logo_white.png"
@@ -28,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
    const animations = () => {
       setTimeout(() => animation_1(), timeTimeOut);
       setTimeout(() => animation_2(), timeTimeOut += time);
-      setTimeout(() => animation_3(), timeTimeOut += time + 2500);
+      setTimeout(() => animation_3(), timeTimeOut += time + 500);
    }
    animations();
 })
