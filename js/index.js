@@ -1,6 +1,6 @@
 AOS.init();
 
-let timeTimeOut = 1500;
+let timeTimeOut = 1000;
 let time = 100;
 
 const animation_1 = () => {
@@ -22,7 +22,7 @@ if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').match
 favicon.href = logo;
 
 document.addEventListener("DOMContentLoaded", function() {
-   document.querySelector("body").classList.add("scroll-y-none");
+ //  document.querySelector("body").classList.add("scroll-y-none");
    document.querySelector("#img_hero_1").classList.remove("img_left_right");
    document.querySelector("#img_hero_2").classList.remove("img_right_left");
 
