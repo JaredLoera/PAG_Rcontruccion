@@ -15,11 +15,6 @@ const animation_3 = () => {
    document.querySelector("#span_icon").classList.remove("d-none");
    document.querySelector("body").classList.remove("scroll-y-none");
 }
-window.onscroll = function () {
-   let position = window.pageYOffset || document.documentElement.scrollTop;
-   let img_hamburger_1 = document.getElementById("img_hamburger_1");
-   let section_hamburgers = document.getElementById("section_hamburgers");
-}
 const favicon = document.querySelector("#favicon");
 let logo = "assets/crown_logo.png"
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) logo = "assets/crown_logo_white.png"
